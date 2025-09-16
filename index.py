@@ -19,7 +19,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')  # Or hardcode: 'your-openai-api-ke
 # Step 1: Load and Preprocess the Data
 def load_and_preprocess_data(file_path='hospital_readmissions.csv'):
     # Load the CSV data
-    df = pd.read_csv('hospital_readmissions.csv');
+    df = pd.read_csv("hospital_readmissions.csv")
     
     # Handle missing values in A1C_Result (replace nan with 'Unknown')
     df['A1C_Result'] = df['A1C_Result'].fillna('Unknown')
