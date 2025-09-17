@@ -14,7 +14,7 @@ import openai
 import os
 
 # Set OpenAI API key (replace with your actual key)
-openai.api_key = os.getenv('OPENAI_API_KEY')  # Or hardcode: 'your-openai-api-key-here'
+openai.api_key = os.getenv('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')  # Or hardcode: 'your-openai-api-key-here'
 
 # Step 1: Load and Preprocess the Data
 def load_and_preprocess_data(file_path='hospital_readmissions.csv'):
